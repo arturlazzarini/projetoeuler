@@ -1,3 +1,4 @@
+from __future__ import division
 from math import factorial
 
 def aux(n, m):
@@ -6,7 +7,8 @@ def aux(n, m):
 def main():
   tamEspaco = factorial(100)
   tamEvento = aux(25, 3) * sum([(-1)**i * aux(22, i) * factorial(97-i) for i in range(23)])
-  print(tamEvento / tamEspaco)
+  resposta = tamEvento / tamEspaco
+  print resposta
     
 if __name__ == '__main__':
   main()
